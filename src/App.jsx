@@ -1,9 +1,16 @@
+
+import ToDoWrapper from "./components/TodoWrapper"
+
 function App() {
 
+
   return (
-    <>
-      <p>Hello world</p>
-    </>
+
+    <div className="main-container">
+
+      <ToDoWrapper />
+
+    </div>
   )
 }
 
