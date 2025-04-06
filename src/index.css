@@ -219,3 +219,105 @@ h1 {
 .save-btn:active {
   transform: translateY(-1px);
 }
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .todo-wrapper {
+    width: 90%;
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+
+  .toto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todo-input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .todo-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .todo-btn .circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .todo-btn:hover .circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .todo-task {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .edit,
+  .delete {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .todo-wrapper {
+    padding: 1rem;
+  }
+  .todo-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todo-input {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .todo-btn {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 12px;
+    margin-right: 15px;
+  }
+
+  .todo-btn .circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .todo-btn:hover .circle {
+    width: 150px;
+    height: 150px;
+  }
+  .edit,
+  .delete {
+    font-size: 1rem;
+    margin-top: -0.1rem;
+    padding: 0.4rem;
+  }
+
+  .todo-task {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .save-btn {
+    padding: 0.8em 1.2em;
+    font-size: 10px;
+  }
+}
